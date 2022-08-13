@@ -70,7 +70,10 @@
             exceptional rapport with people proven success in initiating,
             promoting, and maintaining interpersonal relations.
           </p>
-          <a href="#" class="btn btn-success me-2"
+          <a
+            href="./resume/Resume.docx"
+            class="btn btn-success me-2"
+            download="Resume.docx"
             ><i class="fa-solid fa-download me-2"></i>Resume</a
           >
           <a href="#contact" class="btn btn-secondary"
@@ -99,6 +102,7 @@
               Commitment to implementing quality improvement techniques and a
               good pressure handler.
             </p>
+            <p><span class="fw-bold me-2">Date:</span>August 10, 2022</p>
           </div>
           <div class="col-md-6">
             <div class="row">
@@ -112,12 +116,12 @@
                 <div class="mb-3">INSTRUCTOR:</div>
               </div>
               <div class="col-6">
-                <div class="mb-3">24</div>
+                <div class="mb-3">18</div>
                 <div class="mb-3">yugant01@icloud.com</div>
                 <div class="mb-3">English, Hindi</div>
-                <div class="mb-3">N/A</div>
-                <div class="mb-3">N/A</div>
-                <div class="mb-3">N/A</div>
+                <div class="mb-3">ZCC</div>
+                <div class="mb-3">157261215</div>
+                <div class="mb-3">Siyavash Ghassemi Nia</div>
               </div>
             </div>
           </div>
@@ -174,9 +178,13 @@
         <h2 class="section-title text-center mb-4 fw-bold">
           <span>C</span>ontact <span>M</span>e
         </h2>
-        <form class="bg-white shadow mx-auto w-100 p-3">
+        <form
+          action=" https://httpbin.org/post"
+          method="POST"
+          class="bg-white shadow mx-auto w-100 p-3"
+        >
           <div class="row mb-3">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-3">
               <input
                 type="text"
                 class="form-control"
@@ -196,7 +204,7 @@
             </div>
           </div>
           <div class="row mb-3">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-3">
               <input
                 type="email"
                 class="form-control"
@@ -207,20 +215,82 @@
             </div>
             <div class="col-md-6">
               <input
-                type="text"
+                type="number"
                 class="form-control"
-                placeholder="Phone Number"
-                aria-label="Phone Number"
+                placeholder="Postal Code"
+                aria-label="Postal Code"
                 required
               />
             </div>
+          </div>
+          <div class="mb-3">
+            <input
+              class="form-control"
+              list="cities"
+              id="exampleDataList"
+              placeholder="City"
+            />
+            <datalist id="cities">
+              <option value="Toronto"></option>
+              <option value="Vancouver"></option>
+              <option value="Montreal"></option>
+              <option value="Victoria"></option>
+              <option value="Halifax"></option>
+            </datalist>
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              placeholder="Address"
+              aria-describedby="Address"
+            />
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="hiring"
+              checked
+            />
+            <label class="form-check-label" for="hiring"> Hiring </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="question"
+            />
+            <label class="form-check-label" for="question"> Question </label>
+          </div>
+          <div class="form-check mb-3">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="comment"
+              checked
+            />
+            <label class="form-check-label" for="comment"> Comment </label>
+          </div>
+          <div class="my-3 d-none" id="hourlyRateBox">
+            <input
+              type="number"
+              class="form-control"
+              id="hourlyRate"
+              placeholder="Hourly Rate"
+              aria-describedby="Hourly Rate"
+            />
           </div>
           <div class="form-floating mb-3">
             <textarea
               class="form-control"
               placeholder="Leave a comment here"
               id="floatingTextarea2"
-              style="height: 100px"
+              style="height: 140px"
               minlength="5"
               maxlength="1200"
               required
@@ -245,5 +315,6 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
