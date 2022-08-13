@@ -35,7 +35,7 @@ Open `index.html` file in Browser to see demo
 
 
 ## Live Demo
-![https://yugant88.github.io/Portfolio-Site/]
+https://yugant88.github.io/Portfolio-Site
 
 
 
